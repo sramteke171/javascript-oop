@@ -1,39 +1,40 @@
-# Object Oriented Javascript and Classes
+# Object-Oriented Javascript and Classes
 
 ## Learning Objectives
 
-- Explain the importance of OOJS
-- Describe the role of ES2015 Classes and how they work
-- Use the `new` keyword to create objects with shared properties
+- Explain the importance of Object-Oriented JavaScript (OOJS)
+- Describe the role of classes in JavaScript
+- Use the `new` keyword to create objects with shared properties and methods
+- Define the concept of inheritance as it pertains to classes
 - Create a class that inherits from another using the `extends` and `super` keywords
 
 ## Framing (10 minutes / 0:10)
 
-We've already gotten exposure to Javascript objects using object literal notation (i.e., the curly brackets). You might have created an ATM object like this:
+#### What is an object in programming?
+
+An object encapsulates related data and behavior in an organized structure.
+
+We've already gotten exposure to Javascript objects using **object literal notation**. We could define a car object in this way:
 
 ```js
-let savingsAccount = {
-  balance: $(".balance"),
-  withdrawButton: $(".withdraw"),
-  amount: 0,
-  withdraw: function(deduction){
-    this.amount -= deduction;
-    balance.text(this.amount);
+let car = {
+  make: "Honda",
+  model: "Civic",
+  color: "red",
+  drive: function(){
+    console.log("vroom vroom");
+  },
+  gps: function( location ){
+    console.log( `Beep boop, driving to ${location}` );
+  },
+  paint: function( newColor ){
+    console.log( `Your car has been painted ${newColor}` );
+    this.color = newColor;
   }
-};
+}
 ```
 
-What's nice about the above code snippet? How does it compare to this...
-
-```js
-  let balance = $(".balance");
-  let withdrawButton = $(".withdraw");
-  let amount = 0;
-  let withdraw = function(deduction){
-    amount -= deduction;
-    balance.text(amount);
-  }
-```
+What's nice about the above code snippet?
 
 <details>
 
@@ -47,11 +48,7 @@ What's nice about the above code snippet? How does it compare to this...
 
 #### How have we been writing code up until this point?
 
-We have been writing **procedural code**, which basically means we are writing and executing code as we need it. We'll define some variables and functions here, maybe some event listeners there. We end up with a lot of separate pieces that contribute to the overall functionality of an application.
-
-#### What is an object in programming?
-
-An object encapsulates related data and behavior in an organized structure.
+We have been writing **procedural code**, which basically means we are writing and executing code as we need it. Often, this means we end up with a lot of separate pieces that contribute to the overall functionality of an application.
 
 #### Why might we use an OOP approach to programming?
 
@@ -73,7 +70,7 @@ So far, we've had to make our objects 'by hand' (i.e. using object literals)...
 
 ```js
 var celica = {
-  model: 'Toy-Yoda Celica',
+  model: 'Toyota Celica',
   color: 'limegreen',
   fuel: 100,
   drive: function() {
@@ -101,7 +98,7 @@ var civic = {
 
 Even though we're technically using objects to organize our code, we can see a noticeable amount of duplication. Just imagine if we needed a hundred cars in our app! Our code would certainly not be considered "DRY".
 
-As you may have noticed, some of these properties change between cars (`model` and `color`), and others stay the same. For example, `fuel` starts at 100, while the `drive` and `refuel` functions are the same for every car.
+As you may have noticed, some of these properties change between cars, and others stay the same. In the example above, while the `model` and `color` properties may vary, the `fuel` property and `drive` and `refuel` functions are the same for every car.
 
 Making all of these similar objects by hand is just tedious. What if we could build a function that makes them for us?
 
@@ -113,35 +110,32 @@ Define a function `makeCar` that takes two parameters - `model` and `color` - an
 
 ```js
 // This should return a car object just like the previous example
-var celica = makeCar("Toy-Yoda Celica", "limegreen");
+var celica = makeCar("Toyota Celica", "limegreen");
 ```
 
 <details>
   <summary><strong>Solution...</strong></summary>
 
   ```js
-  // ES5
   function makeCar(model, color){
     return {
       model: model,
-      color: color
-    }
-  }
-  ```
-
-  ```js
-  // ES6
-  let makeCar = (model, color) => {
-    return {
-      model, //ES6 shorthand for model: model
-      color  //ES6 shorthand for color: color
+      color: color,
+      fuel: 100,
+      drive: function() {
+        this.fuel--;
+        return 'Vroom!';
+      },
+      refuel: function() {
+        this.fuel = 100;
+      }
     }
   }
   ```
 
 </details>
 
-This is the basic idea behind OOP: we define a **blueprint** for an object and use it to generate multiple instances of it!
+This is the basic idea behind OOP; we define a **blueprint** for an object and use it to generate multiple **instances** of it!
 
 ## Classes
 
@@ -149,7 +143,7 @@ This is the basic idea behind OOP: we define a **blueprint** for an object and u
 
 It's so common that we need to make objects with similar properties and methods that programming languages usually have some features to help with this.
 
-In Javascript, ES6 provides a feature called **classes** to accomplish this. A class serves as a **blueprint** for instantiating new objects.
+In Javascript, ES6 added a feature called **classes** to accomplish this. A class serves as a **blueprint** for instantiating new objects.
 
 Let's take a look the following `Car` class:
 
@@ -173,9 +167,10 @@ const celica = new Car("Toy-Yoda Celica", "limegreen");
 const civic = new Car("Honda Civic", "lemonchiffon");
 ```
 
-Classes work a lot like the `makeCar` function we just created, but they're supported by JS and we use the `new` keyword to generate instances of an object (just like our earlier `celica` and `civic` examples).
+Classes work a lot like the `makeCar` function we just created, but are a more performant and offer more robust features.  
+ We use the `new` keyword to generate **instances** of a class (just like our earlier `celica` and `civic` examples).
 
-> Note that classes start with a capital letter to make it obvious
+> Note that classes typically are capital case to make it obvious
 that they are classes. This isn't necessary, but is a convention you should follow.
 
 ### I Do: Make a Person Class (10 minutes / 0:45)
@@ -188,6 +183,7 @@ class Person {
     this.name = initialName;
     this.species = "Homo Sapiens";
   }
+  this.hair = true
   // We define any methods accessible to an instance outside of the constructor
   speak(){
     return `Hello! I'm ${this.name}`;
@@ -259,7 +255,7 @@ Here we have two classes: `Dog` and `Cat`. They have some things in common: `nam
 
 Imagine that we had to create a number of other classes - `Horse`, `Goat`, `Pig`, etc. - all of which share the same aforementioned properties but also have methods that are particular to the class.
 
-How could we refactor this so that we don't have to keep writing out the shared class properties and methods. Enter **inheritance** (think genetics, not money from your rich uncle)
+How could we refactor this so that we don't have to keep writing out the shared class properties and methods. Enter **inheritance**
 
 ```js
 class Animal{
