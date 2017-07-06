@@ -46,10 +46,6 @@ What's nice about the above code snippet?
 
 </details>
 
-#### How have we been writing code up until this point?
-
-We have been writing **procedural code**, which basically means we are writing and executing code as we need it. Often, this means we end up with a lot of separate pieces that contribute to the overall functionality of an application.
-
 #### Why might we use an OOP approach to programming?
 
 Object-oriented programming (OOP) provides us with opportunities to clean up our procedural code and model it more-closely to the external world.
@@ -183,7 +179,6 @@ class Person {
     this.name = initialName;
     this.species = "Homo Sapiens";
   }
-  this.hair = true
   // We define any methods accessible to an instance outside of the constructor
   speak(){
     return `Hello! I'm ${this.name}`;
