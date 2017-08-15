@@ -22,14 +22,14 @@ let car = {
   model: "Civic",
   color: "red",
   drive: function(){
-    console.log("vroom vroom");
+    console.log("vroom vroom")
   },
-  gps: function( location ){
-    console.log( `Beep boop, driving to ${location}` );
+  gps: function(location){
+    console.log(`Beep boop, driving to ${location}`)
   },
   paint: function( newColor ){
-    console.log( `Your car has been painted ${newColor}` );
-    this.color = newColor;
+    console.log(`Your car has been painted ${newColor}`)
+    this.color = newColor
   }
 }
 ```
@@ -70,11 +70,11 @@ var celica = {
   color: 'limegreen',
   fuel: 100,
   drive: function() {
-    this.fuel--;
-    return 'Vroom!';
+    this.fuel--
+    return 'Vroom!'
   },
   refuel: function() {
-    this.fuel = 100;
+    this.fuel = 100
   }
 }
 
@@ -83,11 +83,11 @@ var civic = {
   color: 'lemonchiffon',
   fuel: 100,
   drive: function() {
-    this.fuel--;
-    return 'Vroom!';
+    this.fuel--
+    return 'Vroom!'
   },
   refuel: function() {
-    this.fuel = 100;
+    this.fuel = 100
   }
 }
 ```
@@ -106,7 +106,7 @@ Define a function `makeCar` that takes two parameters - `model` and `color` - an
 
 ```js
 // This should return a car object just like the previous example
-var celica = makeCar("Toyota Celica", "limegreen");
+var celica = makeCar("Toyota Celica", "limegreen")
 ```
 
 <details>
@@ -119,11 +119,11 @@ var celica = makeCar("Toyota Celica", "limegreen");
       color: color,
       fuel: 100,
       drive: function() {
-        this.fuel--;
-        return 'Vroom!';
+        this.fuel--
+        return 'Vroom!'
       },
       refuel: function() {
-        this.fuel = 100;
+        this.fuel = 100
       }
     }
   }
@@ -146,21 +146,21 @@ Let's take a look the following `Car` class:
 ```js
 class Car {
   constructor(model, color){
-    this.model = model;
-    this.color = color;
-    this.fuel = 100;
+    this.model = model
+    this.color = color
+    this.fuel = 100
   }
   drive(){
-    this.fuel--;
-    return "Vroom!";
+    this.fuel--
+    return "Vroom!"
   }
   refuel(){
-    this.fuel = 100;
+    this.fuel = 100
   }
 }
 
-const celica = new Car("Toy-Yoda Celica", "limegreen");
-const civic = new Car("Honda Civic", "lemonchiffon");
+const celica = new Car("Toy-Yoda Celica", "limegreen")
+const civic = new Car("Honda Civic", "lemonchiffon")
 ```
 
 Classes work a lot like the `makeCar` function we just created, but are a more performant and offer more robust features.  
@@ -176,17 +176,17 @@ class Person {
   // We use the constructor method to initialize properties for a class instance.
   // It takes whatever arguments we want to pass into an instance.
   constructor(initialName){
-    this.name = initialName;
-    this.species = "Homo Sapiens";
+    this.name = initialName
+    this.species = "Homo Sapiens"
   }
   // We define any methods accessible to an instance outside of the constructor
   speak(){
-    return `Hello! I'm ${this.name}`;
+    return `Hello! I'm ${this.name}`
   }
 }
 
-const andy = new Person("Andy");
-andy.speak(); // "Hello, I'm Andy"
+const andy = new Person("Andy")
+andy.speak() // "Hello, I'm Andy"
 ```
 
 #### `this`
@@ -202,7 +202,7 @@ When we generate a class instance using `new`, Javascript will automatically...
 
 Unlike object notation, you do not need to use commas when separating class methods.
 
-### You Do: [Make an ATM Class](https://github.com/ga-wdi-exercises/es6-classes-practice) (20 minutes / 1:05)
+### You Do: [Make an ATM Class](https://git.generalassemb.ly/ga-wdi-exercises/es6-classes-practice) (20 minutes / 1:05)
 
 > 15 minutes exercise. 5 minutes review.
 
@@ -214,31 +214,31 @@ Although OOP can help us keep our Javascript nice and clean, it's still easy to 
 
 ```js
 class Dog {
-  constructor(name, breed, tail){
-    this.name = name;
-    this.breed = breed;
-    this.waggingTail = tail;
-    this.diet = [];
+  constructor (name, breed, tail) {
+    this.name = name
+    this.breed = breed
+    this.waggingTail = tail
+    this.diet = []
   }
-  eat(food){
-    this.diet.push(food);
-    console.log(this.diet);
+  eat (food) {
+    this.diet.push(food)
+    console.log(this.diet)
   }
-  bark(){
+  bark () {
     return `Bark! Hello, this is dog. My name is ${this.name}`
   }
 }
 
 class Cat {
   constructor(name, breed, numLives){
-    this.name = name;
-    this.breed = breed;
-    this.numLives = numLives;
-    this.diet = [];
+    this.name = name
+    this.breed = breed
+    this.numLives = numLives
+    this.diet = []
   }
   eat(food){
-    this.diet.push(food);
-    console.log(this.diet);
+    this.diet.push(food)
+    console.log(this.diet)
   }
   meow(){
     return `Meow! I am not a dog! My name is ${this.name}`
@@ -255,17 +255,17 @@ How could we refactor this so that we don't have to keep writing out the shared 
 ```js
 class Animal{
   constructor(name, breed){
-    this.name = name;
-    this.breed = breed;
-    this.diet = [];
+    this.name = name
+    this.breed = breed
+    this.diet = []
   }
   eat(food){
-    this.diet.push(food);
-    console.log(this.diet);
+    this.diet.push(food)
+    console.log(this.diet)
   }
 }
 
-const dog = new Animal("Fido", "Beagle");
+const dog = new Animal("Fido", "Beagle")
 ```
 
 Here we've defined an `Animal` class. It contains the properties and methods that are common among specific animal classes. Wouldn't it be nice if `Dog` and `Cat` could just reference this "parent" `Animal` class so that the only things we need to put in their "child" class definitions are the properties and methods that are particular to them (e.g., `bark`, `meow`).
@@ -275,19 +275,19 @@ Lucky for us, we can do that...
 ```js
 class Animal {
   constructor(name, breed){
-    this.name = name;
-    this.breed = breed;
-    this.diet = [];
+    this.name = name
+    this.breed = breed
+    this.diet = []
   }
   eat(food){
-    this.diet.push(food);
-    console.log(this.diet);
+    this.diet.push(food)
+    console.log(this.diet)
   }
 }
 
 class Dog extends Animal {
   constructor(name, breed, tail){
-    this.waggingTail = tail;
+    this.waggingTail = tail
   }
   bark(){
     return `Bark! Hello, this is dog. My name is ${this.name}`
@@ -296,7 +296,7 @@ class Dog extends Animal {
 
 class Cat extends Animal {
   constructor(name, breed, numLives){
-    this.numLives = numLives;
+    this.numLives = numLives
   }
   meow(){
     return `Meow! I am not a dog! My name is ${this.name}`
@@ -308,11 +308,11 @@ The clincher is `extends`. Whatever class is to the left of the `extends` keywor
 
 ```js
 // Let's test out our parent. It just needs a name and breed.
-const goat = new Animal("Gregory", "Mountain Goat");
+const goat = new Animal("Gregory", "Mountain Goat")
 
 // And now the children.
-const fido = new Dog("Fido", "Beagle", true);
-console.log(fido); // "this is not defined"
+const fido = new Dog("Fido", "Beagle", true)
+console.log(fido) // "this is not defined"
 ```
 
 That didn't work out the way we expected. That's because we're forgetting one thing. When creating an instance of a child class, we need to make sure it invokes the constructor of the parent (`Animal`) class.
@@ -322,8 +322,8 @@ We can do that using the keyword `super()`
 ```js
 class Dog extends Animal {
   constructor(name, breed, tail){
-    super(name, breed);
-    this.waggingTail = tail;
+    super(name, breed)
+    this.waggingTail = tail
   }
   bark(){
     return `Bark! Hello, this is dog. My name is ${this.name}`
@@ -337,7 +337,7 @@ class Dog extends Animal {
 
 > If the keyword `super` is confusing, think of a supervisor to understand that we're calling out to the next level above us (to the parent class's constructor).
 
-## You Do: [Inheritance](https://github.com/ga-wdi-exercises/es6-classes-inheritance-practice) (20 minutes / 1:50)
+## You Do: [Inheritance](https://git.generalassemb.ly/ga-wdi-exercises/es6-classes-inheritance-practice) (20 minutes / 1:50)
 
 > 15 minutes exercise. 5 minutes review.
 
@@ -351,7 +351,7 @@ class Dog extends Animal {
 * How do we indicate that one class inherits from another?
 * What does `super` mean?
 
-## Homework: [Geometry](https://github.com/ga-wdi-exercises/js_geometry)
+## Homework: [Geometry](https://git.generalassemb.ly/ga-wdi-exercises/js_geometry)
 
 ## Additional Reading
 
@@ -359,7 +359,7 @@ class Dog extends Animal {
 * [Introduction to Javascript ES6 Classes](https://strongloop.com/strongblog/an-introduction-to-javascript-es6-classes/)
 * [Getters, Setters, and Organizing Responsibility in Javascript](http://raganwald.com/2015/08/24/ready-get-set-go.html)
 * [Static Members in ES6](http://odetocode.com/blogs/scott/archive/2015/02/02/static-members-in-es6.aspx)
-* [Lesson: JS View Classes](https://github.com/ga-wdi-lessons/js-view-classes)
+* [Lesson: JS View Classes](https://git.generalassemb.ly/ga-wdi-lessons/js-view-classes)
 
 #### Prototypical Inheritance
 
