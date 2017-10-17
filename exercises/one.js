@@ -3,8 +3,7 @@
  */
 
 /*
- * Here is the same car object we had in the readme (the one we can't
- * do much with)
+ * Here the code for a car object
  */
 let car = {
   make: 'Honda',
