@@ -22,19 +22,11 @@ let car = {
 };
 
 /*
- * Instead, we use a function:
+ * Instead, we use a function
  */
-function Car(make, model, color) {
-  this.make = make;
-  this.model = model;
-  this.color = color;
-  this.drive = () => console.log('vroom vroom');
-  this.gps = location => console.log(`beep beep, driving to ${location}`);
-  this.paint = newColor => (this.color = newColor);
-}
+
+
 
 /*
  * Now we can create as many cars as we want!
  */
-let coolCar = new Car('toyota', 'prius', 'grey');
-coolCar.drive; // => vroom vroom

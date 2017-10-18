@@ -18,7 +18,7 @@
  * - every card has a method of comparing it to another card to determine if its
  *   score is higher
  *
- * Define an object literal with the above properties and methods:
+ * Define an **object literal** with the above properties and methods:
  */
 
 /*
