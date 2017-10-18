@@ -34,6 +34,8 @@
 
 The important thing to remember about objects is that they encapsulate related data and behavior into an organized structure. We saw this when we discussed **object literal notation**. Recall that we can define an object like this:
 
+Lets check out `one.js` in the `demos/` folder!
+
 ```js
 let car = {
   make: "Honda",
@@ -75,37 +77,42 @@ __Example: lets say we're building an app for a car rental company (Rent-a-Car).
 Before we get in to OOP in JS there are a few loose ends we need to tie up:
 
 <details>
-    <summary>1. What is scope?</summary>
+    <summary>1. What is context?</summary>
 
-    Scope is a sealed context within a program.
+    A reference (through `this`) to the object that owns the currently executing code.
 </details>
 <details>
-    <summary>2. Do Objects have scope in JS?</summary>
+    <summary>2. What is scope?</summary>
 
-    They do not! Only functions have scope.
+    Where variables are accessible during function invocation.
 </details>
 <details>
     <summary>3. What `type` is a function?</summary>
 
     Well it's a function, but a function is a type of object!
 </details>
+<details>
+    <summary>4. Do functions have context?</summary>
+
+    They do!
+</details>
 
 ### We Do: Defining a class (10 minutes / 0:25)
 Lets check out `one.js` in the `demos/` folder!
 
 <details>
-	<summary>ES5 Class</summary>
-	
-	```js
-	function Car(make, model, color) {
-		this.make = make;
-		this.model = model;
-		this.color = color;
-		this.drive = () => console.log('vroom vroom');
-		this.gps = location => console.log(`driving to ${location}`);
-		this.paint = newColor => (this.color = newColor);
-	}
-	```
+  <summary>ES5 Class</summary>
+
+  ```js
+  function Car(make, model, color) {
+    this.make = make;
+    this.model = model;
+    this.color = color;
+    this.drive = () => console.log('vroom vroom');
+    this.gps = location => console.log(`driving to ${location}`);
+    this.paint = newColor => (this.color = newColor);
+  }
+  ```
 </details>
 
 #### Vocabulary:
@@ -126,8 +133,8 @@ Understanding the old syntax is important for understanding the new syntax. With
 Lets checkout `three.js` in the `exercises/` folder!
 
 <details>
-	<summary>Solution</summary>
-	
+  <summary>Solution</summary>
+
 ```js
 class Car {
   constructor(make, model, color) {
