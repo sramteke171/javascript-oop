@@ -16,7 +16,6 @@
 
 ## Schedule
 |     |     |
-| --- | --- |
 | 10 min | Review Objects |
 | 10 min | Intro to OOP |
 | 15 min | Defining a Class |
