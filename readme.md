@@ -15,6 +15,7 @@
 4. Inheritance
 
 ## Schedule
+|     |     |
 | --- | --- |
 | 10 min | Review Objects |
 | 10 min | Intro to OOP |
