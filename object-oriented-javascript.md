@@ -17,7 +17,7 @@ Notice the use of `this` and the fact that we're not returning from the class?
 When we want to generate instances of this class, we'll use the `new` keyword:
 
 ```js
-const carolla = new Car('Toyota', 'Carolla', 'Grey)
+const carolla = new Car('Toyota', 'Carolla', 'Grey')
 const outback = new Car('Subaru', 'Outback', 'Forest Green')
 ```
 
