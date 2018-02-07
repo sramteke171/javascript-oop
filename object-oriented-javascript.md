@@ -56,7 +56,7 @@ class Car {
   }
 }
 
-class Toyota extends Card {
+class Toyota extends Car {
   drive() {
     console.log('vroom vroom')
   }
@@ -75,11 +75,11 @@ class Car {
   }
 }
 
-class Toyota extends Card {
-  constructor(make, color, model) {
-    super(make, color)
+class Toyota extends Car {
+  constructor(model, color) {
+    super(model, color)
     
-    this.model = model
+    this.make = 'Toyota'
   }
   drive() {
     console.log('vroom vroom')
