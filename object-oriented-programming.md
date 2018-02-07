@@ -7,7 +7,9 @@ This section is presented for context. The principles and concepts presented her
 ## Framing (5 min / 0:10)
 The earliest computer programs were written in an imperative style. The programs were a series of instructions that changed a program's state. Data was loaded into the computer, the program ran and manipulated the data, and some output was produced. The first JavaScript programs we wrote followed this imperative style.
 
-Large applications written in imperative style can become confusing. To consider the current state of the application, a developer needs to consider all of code that had been run so far. This process becomes increasingly difficult as the application grows.
+The way that we sometimes think about programming follows this imperative style. Have you ever heard of the example of writing a program for a computer to make a peanut-butter and jelly sandwich? Part of Harvard's intro to computer science class is having students write a program to tell a computer to make a peanut-butter and jelly sandwich. The message is two part: programming is communicating instructions to a computer and these instructions should follow the format of a recipe. That programming-as-a-recipe style of thinking is imperative programming and it's wrong. That's not what we want to do. We don't have time for that.
+
+Large applications written in imperative style become confusing to build and maintain. To consider the current state of our application, we need to consider all of code that has run so far. That becomes increasingly difficult as the application grows.
 
 > [Good article explaining the difference between imperative and declarative programming](https://tylermcginnis.com/imperative-vs-declarative-programming/)
 

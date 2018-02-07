@@ -7,7 +7,13 @@
 - Create a class that inherits from another using the `extends` and `super` keywords
 
 ## Overview
-Today's day-long workshop on Object Oriented Programming and Object Oriented JavaScript will be broken up in to 3 sections followed by a mini-lab at the end of the day:
+This day-long workshop on Object Oriented Programming and Object Oriented JavaScript is broken up in to 3 sections followed by a mini-lab.
+
+The first section covers Object Oriented Programming generally and at a high level. This will be one of the few times during WDI where we "lecture". For the first hour and a half of today's lesson, we'll present the basics of object oriented programming as they apply across object-oriented programming languages. We'll then dive into the JavaScript syntax of OOP in the second section - how we define a class, how we create attributes, how we extend classes - all things that will make sense after the first section of the class.
+
+After we break for lunch, we'll continue discussing OOP in JavaScript but it'll be more practical: we'll define and work with classes together and you'll complete a couple of short exercises, all as part of section three of this workshop. We'll finish off the workshop with a mini-lab where you will take what you've learned about OOP and go build something.
+
+Why is this workshop structured this way? The principles of OOP that we're going to discuss apply generally across languages, not just JavaScript. So it'll be important to understand them when we go to learn our second object oriented programming language: Ruby. It's also important to understand OOP at a high level and separate from a particular language. At the end of the day, OOP is a *paradigm*: it's a way of thinking about software development.
 
 **Part 1:**
 
@@ -29,7 +35,7 @@ Today's day-long workshop on Object Oriented Programming and Object Oriented Jav
 * What is a class? What is `new`? How are they related?
 * What does it mean to use "inheritance" when working with classes?
 * How do we indicate that one class inherits from another?
-* What does `super` mean?
+* What does `super` do?
 
 ## Homework: [Geometry](https://git.generalassemb.ly/ga-wdi-exercises/js_geometry)
 
