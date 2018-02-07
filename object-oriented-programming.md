@@ -43,7 +43,7 @@ Every car object is going to have some common characteristics and some makes and
 What if we had a template for what a car object should look like that we could use whenever we needed to represent a particular car in our application?
 </details>
 
-## OOP Vocabulary (25 min / 0:50)
+## OOP Vocabulary (20 min / 0:45)
 
 ### Classes and Instances
 
@@ -88,7 +88,7 @@ We'll need some placeholder reference for each instance that has yet to be creat
 
 Why do we need this placeholder? Well, each car we create with our Car class will have it's own make and model. When we want to represent that in our class definition, we want to represent that the make and model are part of the class but the *values* for make and model are part of the instance of that class. So we'll attach these values to a placeholder (`self` or `this`, depending on the language) and when our constructor method is invoked, it will attach those values on the new object.
 
-### All Together (10 min / 0:60 )
+### All Together (10 min / 0:55 )
 
 Here is how we define a class in JavaScript, Ruby, Python and PHP. Note the similarities:
 
@@ -104,7 +104,7 @@ Finally, each class definition has a constructor function. In JavaScript, this i
 
 The concepts we've discussed here apply across multiple languages. Object Oriented Programming is a paradigm (a way of thinking) for building applications in any language.
 
-## Inheritance (10 min / 1:10)
+## Inheritance (10 min / 1:05)
 
 At the beginning of this lesson, we said the key benefits of OOP were: Encapsulation, Modularity and Inheritance. What we've covered so far explains the first two; we'll get to the third and final benefit in the next section.
 
@@ -122,13 +122,4 @@ Instead, we'll use the concept of inheritance: we'll create a `Vehicle` class an
 
 ![Inheritance](assets/inheritance.png)
 
-## Review 
-
-You should be able to identify and define each of the following words:
-
-* Class
-* Instance
-* Attribute
-* Method
-* Constructor
-* Inheritance
+## Break (10 min / 1:15)

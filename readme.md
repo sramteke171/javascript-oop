@@ -9,12 +9,19 @@
 ## Overview
 Today's day-long workshop on Object Oriented Programming and Object Oriented JavaScript will be broken up in to 3 sections followed by a mini-lab at the end of the day:
 
+**Part 1:**
+
 | Title | Description |
 | --- | --- |
-| [Object Oriented Programming](object-oriented-programming.md) | Define and discuss the key concepts of OOP as a theoretical paradigm of software development. |
-| [Object Oriented JavaScript](object-oriented-javascript.md) | Learn about the implementation of OOP in JavaScript. |
-| [ES6 and OOJS](oojs-with-es6.md) | Review and learn the new ES6 OOJS syntax. |
-| War: An OOP card game | Mini-lab on using OOJS to implement the card game War.
+| [Object Oriented Programming](object-oriented-programming.md) | Define and discuss the key concepts of OOP as a  paradigm of software development. |
+| [Object Oriented JavaScript](object-oriented-javascript.md) | Learn how to organize your code in an OOP style in JavaScript. |
+
+ **Part 2:** 
+ 
+| Title | Description |
+| --- | --- |
+| [OOJS Practice](oojs-practice.md) | Practice designing and implementing OOP solutions in JavaScript. |
+| [Gladiator](https://git.generalassemb.ly/ga-wdi-exercises/js-gladiator) | Mini-lab on using OOJS to implement a simple Gladiator game. |
 
 ## Quiz Questions (10 minutes / 2:00)
 
