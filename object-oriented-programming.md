@@ -7,8 +7,8 @@ the general mechanics of how it works.
 This section is presented for context. The principles and concepts presented
 here apply to many languages, not just JavaScript, and will be helpful for you
 as you learn object oriented programming in JavaScript, when you interview for
-your first job as a developer and when you go to learn another object-oriented
-language (like Ruby).
+your first job as a developer, and when you go to learn another object-oriented
+language (like Python).
 
 ## Framing (5 min / 0:10)
 
@@ -27,13 +27,12 @@ the format of a recipe. That programming-as-a-recipe style of thinking is
 imperative programming and it's wrong. That's not what we want to do. We don't
 have time for that.
 
-Large applications written in imperative style become confusing to build and
+Large applications written in an imperative style become confusing to build and
 maintain. To consider the current state of our application, we need to consider
 all of code that has run so far. That becomes increasingly difficult as the
 application grows.
 
-> [Good article explaining the difference between imperative and declarative
-> programming](https://tylermcginnis.com/imperative-vs-declarative-programming/)
+> [Good article explaining the difference between imperative and declarative programming](https://tylermcginnis.com/imperative-vs-declarative-programming/)
 
 ## What is Object Oriented Programming (10 min / 0:20)
 
@@ -57,7 +56,7 @@ Object oriented programming gives use three major benefits:
   interact with a well defined set of methods. We can redefine internal behavior
   without changing anything externally - a huge benefit for refactoring.
 - **Modularity**: Because the interface (set of methods) for an object is well
-  defined, it is easy to exchange one object for  another and reorganize objects
+  defined, it is easy to exchange one object for another and reorganize objects
   without breaking them.
 - **Inheritance**: Object Oriented design lets certain classes inherit from, or
   borrow the behavior of another, more general class. The inheriting class can
@@ -67,8 +66,7 @@ You can think of an object as a little machine: it has displays you can read and
 buttons you can push. When you write an object-oriented application, you are
 modeling the entire program as the interactions of these machines.
 
-> Parts of this class are adapted from Dr. Ana Bell's [Introduction to
-> Programming in Python class at MIT](https://youtu.be/-DP1i2ZU9gk).
+> Parts of this class are adapted from Dr. Ana Bell's [Introduction to Programming in Python class at MIT](https://youtu.be/-DP1i2ZU9gk).
 
 ## Scenario: Rent-A-Car (5 min / 0:25)
 
@@ -77,7 +75,7 @@ use to manage renting out their cars to customers. Their current fleet is 100
 cars of a few different makes and models.
 
 Right off the bat, lets say they want to expand their fleet. Do we want to have
-to go in and create a new object literal for every new car they add?
+to go in and create a new object literal (`{}`) for every new car they add?
 
 <details>
   <summary>Discussion</summary>
@@ -120,7 +118,7 @@ If we want to create our own classes, all we need is a name for our class and a
 definition of the information and behavior we want to encapsulate in our class.
 The information and behavior we want to describe with our class has a special
 name: an **attribute**. There are two kinds of attributes: data attributes and
-procedural attributes (more commonly called **methods**). 
+procedural attributes (more commonly called **methods**).
 
 For the Rent-A-Car application we're building, we'll need a class for our
 client's cars (a `Car` class). Our class definition will include all of the

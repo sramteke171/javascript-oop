@@ -38,7 +38,7 @@ The `new` keyword will automatically:
 
 > 10 min to work, 5 min to share with the class
 
-Open up [this repl.it](https://repl.it/@ZakkMan/JS-OOP-Define-an-Animal-Class)
+Open and fork [this repl.it](https://repl.it/@ZakkMan/JS-OOP-Define-an-Animal-Class)
 and define your own animal class. It can be any animal you would like. Include
 at least 3 attributes and 2 methods in your class definition.
 
@@ -110,7 +110,7 @@ method of our `Car` class.
 
 ## You Do: Extend an Animal Class (10 min / 2:15)
 
-Open up [this repl.it](https://repl.it/@ZakkMan/JS-OOP-Define-an-Animal-Pt-2)
+Open and fork [this repl.it](https://repl.it/@ZakkMan/JS-OOP-Define-an-Animal-Pt-2)
 and define an `Animal` class that has a `group` property and `eat` and `sleep`
 methods.
 
@@ -122,7 +122,7 @@ and `console.log` them.
 
 ## You Do: Game of Cards (15 min / 2:30)
 
-Open up [this repl.it](https://repl.it/@ZakkMan/JS-OOP-Card-Game) and define a
+Open and fork [this repl.it](https://repl.it/@ZakkMan/JS-OOP-Card-Game) and define a
 `Card` class with the following properties:
 
 * `suit` (hearts, spades, clubs, diamonds)
