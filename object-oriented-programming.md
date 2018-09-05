@@ -21,11 +21,14 @@ The way that we sometimes think about programming follows this imperative style.
 Have you ever heard of the example of writing a program for a computer to make a
 peanut-butter and jelly sandwich? Part of Harvard's intro to computer science
 class is having students write a program to tell a computer to make a
-peanut-butter and jelly sandwich. The message is two part: programming is
-communicating instructions to a computer and these instructions should follow
-the format of a recipe. That programming-as-a-recipe style of thinking is
-imperative programming and it's wrong. That's not what we want to do. We don't
-have time for that.
+peanut-butter and jelly sandwich.
+
+![Harvard CS 50 PB & J](https://i.ytimg.com/vi/YB62fSOX-PA/maxresdefault.jpg)
+
+The message is two part: programming is communicating instructions to a computer
+and these instructions should follow the format of a recipe. That
+programming-as-a-recipe style of thinking is imperative programming and it's
+wrong. That's not what we want to do. We don't have time for that.
 
 Large applications written in an imperative style become confusing to build and
 maintain. To consider the current state of our application, we need to consider
@@ -42,6 +45,10 @@ applications into discrete units, called objects. Rather than imperatively
 describe everything we want our application to do, in OOP we define objects that
 represent our understanding of the different parts of our application, what
 information describes those parts and what behavior those parts have.
+
+![](https://simplesnippets.tech/wp-content/uploads/2018/03/java-introduction-to-Object-Oriented-Programming.jpg)
+
+> Source: [Simple Snippets](https://simplesnippets.tech/java-introduction-to-object-oriented-programming-oop/)
 
 Every object stores and manages any state or data relevant to itself internally.
 We almost always have many instances of a type of object. We use methods to
@@ -167,12 +174,12 @@ values on the new object.
 
 ### All Together (10 min / 0:55 )
 
-Here is how we define a class in JavaScript, Ruby, Python and PHP. Note the
+Here is how we define a class in JavaScript, Ruby, Python, and PHP. Note the
 similarities:
 
 ![class definitions](assets/class-definitions.png)
 
-The Car class defined above in JavaScript, Ruby, Python and PHP (all popular
+The Car class defined above in JavaScript, Ruby, Python, and PHP (all popular
 languages for the web) have each of the concepts we've discussed.
 
 In all four languages, we use the shared `class` keyword to define our class.
@@ -197,8 +204,9 @@ in any language.
 ## Inheritance (10 min / 1:05)
 
 At the beginning of this lesson, we said the key benefits of OOP were:
-Encapsulation, Modularity and Inheritance. What we've covered so far explains
-the first two; we'll get to the third and final benefit in the next section.
+**Encapsulation, Modularity and Inheritance**. What we've covered so far
+explains the first two; we'll get to the third and final benefit in the next
+section.
 
 Our `Car` class is relatively simple at the moment. But with time, and as our
 application grows, it could become pretty complex. That complexity is hidden
