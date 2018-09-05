@@ -30,7 +30,7 @@ you've learned about OOP and go build something.
 Why is this workshop structured this way? The principles of OOP that we're going
 to discuss apply generally across languages, not just JavaScript. So it'll be
 important to understand them when we go to learn our second object oriented
-programming language: Ruby. It's also important to understand OOP at a high
+programming language: Python. It's also important to understand OOP at a high
 level and separate from a particular language. At the end of the day, OOP is a
 *paradigm*: it's a way of thinking about software development.
 
