@@ -14,7 +14,7 @@ This day-long workshop on Object Oriented Programming and Object Oriented
 JavaScript is broken up in to 3 sections followed by a mini-lab.
 
 The first section covers Object Oriented Programming generally and at a high
-level. This will be one of the few times during WDI where we "lecture". For the
+level. This will be one of the few times during SEI where we "lecture". For the
 first hour and a half of today's lesson, we'll present the basics of object
 oriented programming as they apply across object-oriented programming languages.
 We'll then dive into the JavaScript syntax of OOP in the second section - how we
@@ -32,21 +32,21 @@ to discuss apply generally across languages, not just JavaScript. So it'll be
 important to understand them when we go to learn our second object oriented
 programming language: Python. It's also important to understand OOP at a high
 level and separate from a particular language. At the end of the day, OOP is a
-*paradigm*: it's a way of thinking about software development.
+_paradigm_: it's a way of thinking about software development.
 
 **Part 1:**
 
-| Title | Description |
-| --- | --- |
-| [Object Oriented Programming](object-oriented-programming.md) | Define and discuss the key concepts of OOP as a  paradigm of software development. |
-| [Object Oriented JavaScript](object-oriented-javascript.md) | Learn how to organize your code in an OOP style in JavaScript. |
+| Title                                                         | Description                                                                       |
+| ------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [Object Oriented Programming](object-oriented-programming.md) | Define and discuss the key concepts of OOP as a paradigm of software development. |
+| [Object Oriented JavaScript](object-oriented-javascript.md)   | Learn how to organize your code in an OOP style in JavaScript.                    |
 
 **Part 2:**
 
-| Title | Description |
-| --- | --- |
-| [OOJS Practice](oojs-practice.md) | Practice designing and implementing OOP solutions in JavaScript. |
-| [Gladiator](https://git.generalassemb.ly/dc-wdi-fundamentals/js-gladiator) | Mini-lab on using OOJS to implement a simple Gladiator game. |
+| Title                                                                      | Description                                                      |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| [OOJS Practice](oojs-practice.md)                                          | Practice designing and implementing OOP solutions in JavaScript. |
+| [Gladiator](https://git.generalassemb.ly/dc-wdi-fundamentals/js-gladiator) | Mini-lab on using OOJS to implement a simple Gladiator game.     |
 
 ## Quiz Questions (10 minutes / 2:00)
 
