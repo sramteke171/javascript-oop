@@ -48,14 +48,19 @@ information describes those parts and what behavior those parts have.
 
 ![](https://simplesnippets.tech/wp-content/uploads/2018/03/java-introduction-to-Object-Oriented-Programming.jpg)
 
-> Source: [Simple Snippets](https://simplesnippets.tech/java-introduction-to-object-oriented-programming-oop/)
+> Source:
+> [Simple Snippets](https://simplesnippets.tech/java-introduction-to-object-oriented-programming-oop/)
 
 Every object stores and manages any state or data relevant to itself internally.
-We almost always have many instances of a type of object. We use methods to
-initialize, modify, or act on an objects' internal state. Because these methods
-will be the same across all instances of a type of object, we define a single
-class with all of this behavior described in one place. We then use that class
-to instantiate as many instances (objects) of the class as we need.
+We almost always have many instances of a type of object.
+
+We use methods to initialize, modify, or act on an objects' internal state.
+
+Because these methods will be the same across all instances of a type of object,
+we define a **single class** with all of this behavior described in one place.
+
+We then use that class to instantiate as many instances (objects) of the class
+as we need.
 
 Object oriented programming gives use three major benefits:
 
@@ -73,7 +78,8 @@ You can think of an object as a little machine: it has displays you can read and
 buttons you can push. When you write an object-oriented application, you are
 modeling the entire program as the interactions of these machines.
 
-> Parts of this class are adapted from Dr. Ana Bell's [Introduction to Programming in Python class at MIT](https://youtu.be/-DP1i2ZU9gk).
+> Parts of this class are adapted from Dr. Ana Bell's
+> [Introduction to Programming in Python class at MIT](https://youtu.be/-DP1i2ZU9gk).
 
 ## Scenario: Rent-A-Car (5 min / 0:25)
 
@@ -95,6 +101,7 @@ models might have distinct characteristics.
 
 What if we had a template for what a car object should look like that we could
 use whenever we needed to represent a particular car in our application?
+
 </details>
 
 ## OOP Vocabulary (20 min / 0:45)
@@ -167,7 +174,7 @@ to as `self`, though in JavaScript it's `this`.
 Why do we need this placeholder? Well, each car we create with our Car class
 will have it's own make and model. When we want to represent that in our class
 definition, we want to represent that the make and model are part of the class
-but the *values* for make and model are part of the instance of that class. So
+but the _values_ for make and model are part of the instance of that class. So
 we'll attach these values to a placeholder (`self` or `this`, depending on the
 language) and when our constructor method is invoked, it will attach those
 values on the new object.
