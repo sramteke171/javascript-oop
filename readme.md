@@ -46,7 +46,7 @@ _paradigm_: it's a way of thinking about software development.
 | Title                                                                      | Description                                                      |
 | -------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [OOJS Practice](oojs-practice.md)                                          | Practice designing and implementing OOP solutions in JavaScript. |
-| [Gladiator](https://git.generalassemb.ly/dc-wdi-fundamentals/js-gladiator) | Mini-lab on using OOJS to implement a simple Gladiator game.     |
+| [Gladiator](https://git.generalassemb.ly/jdr-0127/js-gladiator) | Mini-lab on using OOJS to implement a simple Gladiator game.     |
 
 ## Quiz Questions (10 minutes / 2:00)
 
@@ -56,7 +56,7 @@ _paradigm_: it's a way of thinking about software development.
 - How do we indicate that one class inherits from another?
 - What does `super` do?
 
-## Homework: [Geometry](https://git.generalassemb.ly/dc-wdi-fundamentals/js-geometry)
+## Homework: [Geometry](https://git.generalassemb.ly/jdr-0127/js-geometry)
 
 ## Additional Reading
 
