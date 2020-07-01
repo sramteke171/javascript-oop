@@ -9,13 +9,13 @@ of creating sub-classes based on a parent class. Let's get to it!
 ## Getting Started
 
 Follow along to the examples below in [JS OOP
-Practice](https://git.generalassemb.ly/jdr-0127/js-oop-practice). The
+Practice](https://git.generalassemb.ly/jdr-0622/js-oop-practice). The
 exercises you will be completing are also in that repository.
 
 ## Classes in ES6 (15 min / 1:35)
 
 > Follow along with Prompt #1 in [JS OOP
-> Practice](https://git.generalassemb.ly/jdr-0127/js-oop-practice)
+> Practice](https://git.generalassemb.ly/jdr-0622/js-oop-practice)
 
 We briefly saw how to define a class in the previous section, in comparison to
 how we do so in Ruby, Python and PHP. The syntax looks like this:
@@ -48,14 +48,14 @@ The `new` keyword will automatically:
 > 10 min to work, 5 min to share with the class
 
 Work through Prompt #2 in [JS OOP
-Practice](https://git.generalassemb.ly/jdr-0127/js-oop-practice)
+Practice](https://git.generalassemb.ly/jdr-0622/js-oop-practice)
 
 ## Inheritance (15 minutes / 2:05)
 
 The last core concept of OOP we need to implement is inheritance.
 
 > Follow along with Prompt #3 in [JS OOP
-> Practice](https://git.generalassemb.ly/jdr-0127/js-oop-practice)
+> Practice](https://git.generalassemb.ly/jdr-0622/js-oop-practice)
 
 ### Turn & Talk (5 min)
 
@@ -119,10 +119,10 @@ method of our `Car` class.
 ## You Do: Extend an Animal Class (10 min / 2:15)
 
 Work through Prompt #4 in [JS OOP
-Practice](https://git.generalassemb.ly/jdr-0127/js-oop-practice)
+Practice](https://git.generalassemb.ly/jdr-0622/js-oop-practice)
 
 ## You Do: Game of Cards (15 min / 2:30)
 
 Work through Prompt #5 in [JS OOP
-Practice](https://git.generalassemb.ly/jdr-0127/js-oop-practice)
+Practice](https://git.generalassemb.ly/jdr-0622/js-oop-practice)
 
